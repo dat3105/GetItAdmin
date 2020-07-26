@@ -85,7 +85,7 @@ class ListLaptop_Adapter(var context: Context,var listLap : ArrayList<Laptop>) :
             listener?.onClicked(position,true)
             holder.linear_option.visibility = View.GONE
         }
-
+//test git
         holder.itemView.setOnClickListener {
             if (isClick){
                 holder.linear_option.visibility = View.VISIBLE
