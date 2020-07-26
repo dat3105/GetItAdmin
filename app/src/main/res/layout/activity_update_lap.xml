@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    tools:context=".Screen.UpdateBrandActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_updateLap"
+        android:background="@drawable/toolbar_shape"
+        app:navigationIcon="@drawable/icon_back"
+        app:title="SỬA LAPTOP"
+        app:titleTextColor="@color/mainColor"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:id="@+id/tv_brandName_updateLap"
+                android:textSize="20sp"
+                android:textColor="@color/mainColor"
+                android:gravity="center"
+                android:text="Lalala"
+                android:background="@drawable/toolbar_shape"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin laptop"
+                    android:textSize="15sp"
+                    android:textColor="#2F85FF"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/robotoblack"/>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:boxBackgroundColor="@color/mainColor"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Tên laptop"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nameLap_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Đơn giá"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_priceLap_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Số lượng"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_quantityLap_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin chi tiết"
+                    android:textSize="15sp"
+                    android:textColor="#2F85FF"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/robotoblack"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Công nghệ CPU"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_cpuTech_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Tốc dộ CPU"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_speedCPU_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Hãng CPU"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_hangCPU_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Bộ nhớ đệm"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_boNhoDem_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Dung lượng RAM"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_dungLuongRAM_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Loại RAM"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_loaiRAM_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Tốc độ BUS"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_tocDoBUS_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Số lượng RAM"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_soLuongRAM_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Xuất xứ"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_xuatXu_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/mainColor"
+                android:hint="Năm sản xuất"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_namSanXuat_updateLap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_addImageLap_updateLap"
+                android:paddingVertical="3dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_menu_shape"
+                android:drawableTop="@drawable/icon_cam"
+                android:drawablePadding="5dp"
+                android:text="Thêm hình ảnh"
+                android:textSize="12sp"
+                android:textColor="@color/mainColor"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imv_avaLap_updateLap"
+                android:layout_margin="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_confirm_updateLap"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/button_shape"
+        android:paddingVertical="10dp"
+        android:text="Nhập hàng"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

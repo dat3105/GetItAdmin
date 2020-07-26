@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Screen.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@drawable/banneraccount">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imv_avatar_accountScreen"
+            app:civ_border_width="0.1dp"
+            app:civ_border_color="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_person"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_username_accountScreen"
+                android:fontFamily="@font/robotoblack"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_email_accountScreen"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_phone_accountScreen"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--banner-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_account_screen"
+        android:layout_margin="15dp"
+        android:id="@+id/linear_editaccountScreen"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imv_editAccountScreen"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_editaccount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THAY ĐỔI THÔNG TIN"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <!-- button edit account   -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_account_screen"
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/linear_noti_accountscreen"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imv_notiAccountScreen"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_noti"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÔNG BÁO"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <!-- button noti  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_account_screen"
+        android:layout_margin="15dp"
+        android:animateLayoutChanges="true"
+        android:id="@+id/linear_logOut_accountScreen"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imv_logOut_accountScreen"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_logout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG XUẤT"
+            android:textColor="@color/black"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <!-- button edit account   -->
+
+</LinearLayout>

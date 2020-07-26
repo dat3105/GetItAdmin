@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/button_menu_shape"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_shape">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imv_back_dialogLogout"
+            android:src="@drawable/whitebackicon"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+    <!--    title part-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất khỏi ứng dụng ?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/robotoregular"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:id="@+id/btn_yes_dialogLogout"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/button_shape"
+            android:text="Có"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:id="@+id/btn_no_dialogLogout"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/button_cancel_shape"
+            android:text="Không"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>

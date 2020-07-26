@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_01"
+            android:tint="@color/mainColor" />
+    </item>
+
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_02"
+            android:tint="@color/mainColor" />
+    </item>
+
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_03"
+            android:tint="@color/mainColor" />
+    </item>
+
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_04"
+            android:tint="@color/mainColor" />
+    </item>
+
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_05"
+            android:tint="@color/mainColor" />
+    </item>
+
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_06"
+            android:tint="@color/mainColor" />
+    </item>
+
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_07"
+            android:tint="@color/mainColor" />
+    </item>
+
+    <item android:duration="48" >
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ic_loading_08"
+            android:tint="@color/mainColor" />
+    </item>
+
+</animation-list>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_date_guest_content"
+        android:text="14:28 - 25/06/2020"
+        android:textColor="@color/blurblack"
+        android:textSize="12sp"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/robotoregular"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_avatar_itemGuest_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0.1dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mes_guest_content"
+            android:text="Tôi là guest"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/robotoregular"
+            android:background="@drawable/bg_guest_content_mes"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

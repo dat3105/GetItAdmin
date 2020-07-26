@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen.UpdateBrandActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar_updateBrand"
+            android:background="@drawable/toolbar_shape"
+            app:navigationIcon="@drawable/icon_back"
+            app:title="SỬA THÔNG TIN LOẠI"
+            app:titleTextColor="@color/mainColor"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:boxBackgroundColor="@color/mainColor"
+            app:hintTextColor="@color/mainColor"
+            android:hint="Thể loại"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_nameBrand_updateBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/btn_updateImageBrand"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_menu_shape"
+            android:drawableTop="@drawable/icon_cam"
+            android:paddingTop="5dp"
+            android:text="Thêm hình ảnh"
+            android:textSize="12sp"
+            android:textColor="@color/mainColor"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imv_avaLap_updateBrandScreen"
+            android:layout_margin="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/btn_confirm_updateBrandScreen"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_maincolor_shape"
+            android:paddingTop="5dp"
+            android:text="Nhập hàng"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>

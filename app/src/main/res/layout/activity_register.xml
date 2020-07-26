@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Screen.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/splashscreen"
+        android:fitsSystemWindows="true"
+        >
+        <ImageView
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:src="@drawable/icon"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET IT"
+            android:textSize="11sp"
+            android:textColor="#2F85FF"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí"
+            android:textSize="20sp"
+            android:textColor="#2F85FF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/et_userName_registerScreen"
+            android:padding="10dp"
+            android:hint="Tên của bạn"
+            android:autofillHints=""
+            android:layout_margin="15dp"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/robotoregular"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/et_email_registerScreen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_shape"
+            android:hint="Email"
+            android:padding="10dp"
+            android:fontFamily="@font/robotoregular"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/et_phoneNumber_registerScreen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_shape"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Số điện thoại"
+            android:padding="10dp"
+            android:fontFamily="@font/robotoregular"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/et_password_registerScreen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_shape"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:fontFamily="@font/robotoregular"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/et_retypePassword_registerScreen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_shape"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:fontFamily="@font/robotoregular"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/btn_register_registerScreen"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_shape"
+            android:text="đăng kí"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã có tài khoản ?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotoregular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_loginHere_registerScreen"
+                android:text=" - Quay lại đăng nhập"
+                android:textColor="#2F85FF"
+                android:textSize="20sp"
+                android:fontFamily="@font/robotoregular"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

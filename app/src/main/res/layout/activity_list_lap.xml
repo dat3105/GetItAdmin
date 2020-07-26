@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splashscreen"
+    tools:context=".Screen.ListLapActivity">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRL_listLapScreen"
+        android:outlineSpotShadowColor="@color/mainColor"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/toolbar_listLapScreen"
+                    android:background="@drawable/toolbar_shape"
+                    app:navigationIcon="@drawable/icon_back"
+                    app:title="DANH SÁCH LAPTOP"
+                    app:titleTextColor="@color/mainColor"
+                    />
+                <Spinner
+                    android:layout_margin="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/spinner_listLapScreen"
+                    android:spinnerMode="dropdown"
+                    android:background="@drawable/edittext_shape"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm"
+                        android:textColor="@color/mainColor"
+                        android:fontFamily="@font/robotoblack"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giá"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="55dp"
+                        android:textColor="@color/mainColor"
+                        android:fontFamily="@font/robotoblack"
+                        android:textSize="18sp"
+                       />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tồn kho"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="12dp"
+                        android:textColor="@color/mainColor"
+                        android:fontFamily="@font/robotoblack"
+                        android:textSize="18sp"
+                       />
+                </RelativeLayout>
+                <!--  title of list      -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rcView_listLap"
+                    android:layout_margin="15dp"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
