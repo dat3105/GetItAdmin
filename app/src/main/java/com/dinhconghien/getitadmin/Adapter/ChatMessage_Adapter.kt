@@ -10,8 +10,18 @@ import com.dinhconghien.getitadmin.Model.ChatMessage
 import com.dinhconghien.getitadmin.R
 import de.hdodenhof.circleimageview.CircleImageView
 
-class ChatMessage_Adapter(var listItem: ArrayList<ChatMessage>, val idUser : String, val avaUser : String) :
+class ChatMessage_Adapter(var listItem: ArrayList<ChatMessage>, val idAdmin : String, var avaUser : String) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    fun setListChatMessage(listChatMes : ArrayList<ChatMessage>){
+        this.listItem = listChatMes
+        notifyDataSetChanged()
+    }
+
+    fun setAvaUserNew(avaUser: String){
+        this.avaUser = avaUser
+        notifyDataSetChanged()
+    }
 
     var VIEW_HOLDER_ME: Int = 0
     var VIEW_HOLDER_YOU: Int = 1
@@ -22,7 +32,7 @@ class ChatMessage_Adapter(var listItem: ArrayList<ChatMessage>, val idUser : Str
     }
 
     override fun getItemViewType(position: Int): Int {
-        return if (listItem!!.get(position).idSender == idUser) {
+        return if (listItem!!.get(position).idSender == idAdmin) {
             VIEW_HOLDER_ME
         } else {
             VIEW_HOLDER_YOU

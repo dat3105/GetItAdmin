@@ -8,8 +8,6 @@ data class User(
     var password : String ="",
     var role : String = "Admin",
     var wasOnline : Boolean = false,
-    var wasFirstBuy : Boolean = true,
-    var userAddress : String ="",
     var avaUser : String =""
 ) {
 }

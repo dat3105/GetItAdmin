@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/button_image_shape"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="80dp"
+        android:id="@+id/layout_avatar_listMesItem"
+        android:layout_height="80dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_avaAdmin_itemListAdmin"
+            android:layout_width="59dp"
+            android:layout_height="53dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0.1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_online_listAdminItem"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:background="@drawable/bg_online"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0.1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imv_avaAdmin_itemListAdmin"
+            app:layout_constraintEnd_toEndOf="@+id/imv_avaAdmin_itemListAdmin"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imv_avaAdmin_itemListAdmin"
+            app:layout_constraintTop_toTopOf="@+id/imv_avaAdmin_itemListAdmin"
+            app:layout_constraintVertical_bias="0.88" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/layout_avatar_listMesItem"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_nameUser_listMesItem"
+        tools:ignore="UnknownId">
+        <TextView
+            android:id="@+id/tv_userName_listMessageItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/robotoblack"
+            android:text="Admin Công Hiến"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_phoneNumber_listAdminItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="0933261041"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/blurblack"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="380dp"
+        android:layout_height="0.1dp"
+        android:background="@color/blurblack"
+        android:layout_toRightOf="@+id/layout_avatar_listMesItem"
+        android:layout_below="@+id/layout_avatar_listMesItem"/>
+</RelativeLayout>

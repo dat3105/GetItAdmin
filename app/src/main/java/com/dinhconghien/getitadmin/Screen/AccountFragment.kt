@@ -42,6 +42,9 @@ class AccountFragment : Fragment() {
     ): View? {
       val view =  inflater.inflate(R.layout.fragment_account, container, false)
         init(view)
+        val utils = SharePreference_Utils(view.context)
+        userID = utils.getSession()
+        fetchDataAndUpdateUI(userID,view)
         btnEdit.setOnClickListener {
             val intent = Intent(view?.context,EditAccountActivity::class.java)
             startActivity(intent)
