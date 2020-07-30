@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@drawable/btnblue_default">
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/imv_bill_inVoiceWating"
+                android:layout_height="30dp"
+                android:src="@drawable/bill"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_idInvoiceWating_Item"
+                android:text="Mã hóa đơn : kjfnkjvnSNDSVO"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+        <!--  title part  -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thời gian đặt hàng : "
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/robotoregular"/>
+                    <TextView
+                        android:id="@+id/tv_timeOrder_itemInvoiceWating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17/06/2020  09:30"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoregular"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng thanh toán : "
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/robotoregular"/>
+                    <TextView
+                        android:id="@+id/tv_sumPrice_itemInvoiceWating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12000000 VNĐ"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="13dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoregular"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trạng thái : "
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/robotoregular"/>
+                    <TextView
+                        android:id="@+id/tv_status_itemInvoiceWating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đang chờ xác nhận"
+                        android:textColor="@color/green"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="47dp"
+                        android:fontFamily="@font/robotoregular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GET IT"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="#2F85FF"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--      body part  -->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Screen.EditAccountActivity"></activity>
+        <activity android:name=".Screen.InvoiceAcceptedDetail_Activity"></activity>
+        <activity android:name=".Screen.InvoiceWatingDetail_Activity" />
+        <activity android:name=".Screen.EditAccountActivity" />
         <activity android:name=".Screen.ChatMessageActivity" />
         <activity android:name=".Screen.UpdateBrandActivity" />
         <activity android:name=".Screen.UpdateLapActivity" />

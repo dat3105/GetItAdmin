@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:background="@drawable/button_menu_shape"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imv_avaLap_paymentItem"
+            android:src="@drawable/ic_person"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/imv_avaLap_paymentItem"
+            >
+            <TextView
+                android:id="@+id/tv_nameLapTop_paymentItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/robotoblack"
+                android:text="Vostro"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_nameBrand_paymentItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Laptop Dell"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_nameLapTop_paymentItem"
+                android:textSize="18sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_nameBrand_paymentItem"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_priceLap_paymentItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="2.500.000 VND"
+                    android:textColor="@color/redPorto"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tv_amount_paymentItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:layout_alignParentRight="true"
+                    android:text="x 1"
+                    android:textColor="@color/blurblack"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+<!--            <CheckBox-->
+<!--                android:id="@+id/cb_confirmAccep_itemListLap"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:button="@drawable/checkbox_shape"-->
+<!--                />-->
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

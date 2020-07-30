@@ -49,12 +49,12 @@ class ListLaptop_Adapter(var context: Context,var listLap : ArrayList<Laptop>) :
             if (price.length == 7){
                 val firstChar = price.substring(0,1)
                 val middleChar = price.substring(1,4)
-                val lastChar = price.substring(3,6)
+                val lastChar = price.substring(4,7)
                 price = "$firstChar.$middleChar.$lastChar"
             }else if (price.length == 8){
                 val firstChar = price.substring(0,2)
                 val middleChar = price.substring(2,5)
-                val lastChar = price.substring(4,7)
+                val lastChar = price.substring(5,8)
                 price = "$firstChar.$middleChar.$lastChar"
             }
         Log.v("Check price","price's length : ${price.length}")

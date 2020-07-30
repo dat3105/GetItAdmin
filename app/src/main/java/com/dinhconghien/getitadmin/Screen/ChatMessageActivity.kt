@@ -110,6 +110,7 @@ class ChatMessageActivity : AppCompatActivity() {
             val userName = roomModel.userName
             val wasSeenUser = roomModel.wasSeenUser
             val countUnreadUser = roomModel.countUnreadMesUser
+            adapterMesChat.setAvaUserNew(avaUser)
             if (wasSeenUser == true){
                 setUpMes(0,messageUser,true,avaUser,userName,true)
             }
@@ -136,7 +137,7 @@ class ChatMessageActivity : AppCompatActivity() {
     }
 
     private fun getMesItem(){
-        adapterMesChat = ChatMessage_Adapter(listMesContent,idAdmin,avaAdmin)
+        adapterMesChat = ChatMessage_Adapter(listMesContent,idAdmin,avaUser)
         rcView_mesContent.layoutManager = LinearLayoutManager(this,
             LinearLayoutManager.VERTICAL,false)
 
@@ -186,8 +187,8 @@ class ChatMessageActivity : AppCompatActivity() {
         for (param in snapshot.children){
             val userModel = param.getValue(User::class.java)
             if (userModel != null){
-                userName = userModel.userName!!
-                avaUser = userModel.avaUser!!
+                userName = userModel.userName
+                avaUser = userModel.avaUser
                 tv_nameUser_mesContent.text = userName
                 DB_ROOMCHAT.child(idRoomChat).child("userName").setValue(userName)
                 DB_ROOMCHAT.child(idRoomChat).child("avaUser").setValue(avaUser)

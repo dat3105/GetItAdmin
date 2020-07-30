@@ -10,6 +10,8 @@ data class Laptop(
     var rating : Int = 0,
     var amountRating : Int = 0,
     var amountSell : Int = 0,
-    var nameBrand : String = ""
+    var nameBrand : String = "",
+    var amountInCart : Int = 1,
+    var onConfirm : Boolean = false
 ) {
 }
