@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -63,15 +63,15 @@
         android:padding="10dp"
         android:fontFamily="@font/robotoregular"/>
 
-    <CheckBox
-        android:id="@+id/cb_remember_loginScreen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/et_pass_loginScreen"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:button="@drawable/checkbox_shape"
-        android:text="Lưu tài khoản" />
+<!--    <CheckBox-->
+<!--        android:id="@+id/cb_remember_loginScreen"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/et_pass_loginScreen"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:button="@drawable/checkbox_shape"-->
+<!--        android:text="Lưu tài khoản" />-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -123,4 +123,4 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

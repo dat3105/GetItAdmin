@@ -12,6 +12,7 @@ data class Laptop(
     var amountSell : Int = 0,
     var nameBrand : String = "",
     var amountInCart : Int = 1,
-    var onConfirm : Boolean = false
+    var onConfirm : Boolean = false,
+    var wasRated : Boolean = false
 ) {
 }

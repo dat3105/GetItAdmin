@@ -53,7 +53,6 @@ class AccountFragment : Fragment() {
         btnLogout.setOnClickListener {
             showCustomDialog(view)
         }
-        btnNoti.setOnClickListener {  }
         return view
     }
 
@@ -94,7 +93,6 @@ class AccountFragment : Fragment() {
         tvEmail = view.findViewById(R.id.tv_email_accountScreen)
         tvphoneNum = view.findViewById(R.id.tv_phone_accountScreen)
         btnEdit = view.findViewById(R.id.linear_editaccountScreen)
-        btnNoti = view.findViewById(R.id.linear_noti_accountscreen)
         btnLogout = view.findViewById(R.id.linear_logOut_accountScreen)
     }
 

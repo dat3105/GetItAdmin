@@ -165,9 +165,10 @@ class InvoiceWatingDetail_Activity : AppCompatActivity() {
                 val idLap = listLapOrder[i].idLap
                 val quantity = listLapOrder[i].quantity
                 val amountInCart = listLapOrder[i].amountInCart
+                val amountSell =  listLapOrder[i].amountSell
                 val quantityLapAfterConfirm = quantity - amountInCart
                 DB_LAP.child(idLap).child("quantity").setValue(quantityLapAfterConfirm)
-                DB_LAP.child(idLap).child("amountSell").setValue(amountInCart)
+                DB_LAP.child(idLap).child("amountSell").setValue(amountSell+amountInCart)
         }
     }
 

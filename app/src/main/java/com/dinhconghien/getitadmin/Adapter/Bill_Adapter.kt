@@ -77,7 +77,7 @@ class Bill_Adapter(var context: Context, var listInvoice : ArrayList<Bill>) : Re
         if (invoiceWating.status.contains("Đang chờ xác nhận",true)){
             holder.tv_status.setTextColor(Color.parseColor("#00A65C"))
         }
-        if (invoiceWating.status.contains("Đã giao",true)){
+        if (invoiceWating.status.contains("Đã xác nhận",true)){
             holder.tv_status.setTextColor(Color.parseColor("#2F85FF"))
         }
         if (invoiceWating.status.contains("Đã hủy",true)){
@@ -99,11 +99,12 @@ class Bill_Adapter(var context: Context, var listInvoice : ArrayList<Bill>) : Re
                 intent.putExtra("idUser",invoiceWating.idUser)
                 context.startActivity(intent)
             }
-            if (status.contains("Đã giao",true)){
-                val intent = Intent(context, InvoiceAcceptedDetail_Activity::class.java)
-                intent.putExtra("idBill",invoiceWating.idBill)
-                context.startActivity(intent)
-            }
+//            if (status.contains("Đã xác nhận",true)){
+//                val intent = Intent(context, InvoiceAcceptedDetail_Activity::class.java)
+//                intent.putExtra("idBill",invoiceWating.idBill)
+//                intent.putExtra("idUser",invoiceWating.idUser)
+//                context.startActivity(intent)
+//            }
 
         }
     }
