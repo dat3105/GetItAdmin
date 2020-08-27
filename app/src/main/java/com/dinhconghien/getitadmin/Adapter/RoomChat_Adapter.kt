@@ -80,8 +80,9 @@ class RoomChat_Adapter(
         }
         if (countUnreadAdmin == 0){
             holder.tv_unReadMes.visibility = View.GONE
+        }else{
+            holder.tv_unReadMes.text = countUnreadAdmin.toString()
         }
-        holder.tv_unReadMes.text = countUnreadAdmin.toString()
         if (roomChatModel.avaUser != ""){
             Glide.with(context).load(roomChatModel.avaUser).fitCenter().into(holder.imv_avaUser)
         }

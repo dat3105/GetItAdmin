@@ -68,7 +68,7 @@ class RoomChatFragment : Fragment() {
     }
 
     private fun getListRoomChat(){
-        DB_ROOMCHAT.orderByChild("idAdmin").equalTo(idAdmin).addListenerForSingleValueEvent(object :
+        DB_ROOMCHAT.orderByChild("idAdmin").equalTo(idAdmin).addValueEventListener(object :
             ValueEventListener {
             @SuppressLint("LongLogTag")
             override fun onCancelled(error: DatabaseError) {
